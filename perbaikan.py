@@ -44,8 +44,7 @@ class ChooseOrder(Order):
 # ==========================================
 
 customer1 = input("Masukkan nama pelanggan: ")
-table1 = int(input("Masukkan nomor meja: "))
-
+table1 = int(input("Masukkan nomor meja 1-10: "))
 print("\n--- SILAKAN PILIH MENU ---")
 # Mengakses Order.menu sekarang SUDAH BISA karena menu adalah Class Attribute
 for pilih, (namaMenu, harga) in enumerate(Order.menu.items(), start=1):
